@@ -1,0 +1,18 @@
+PA05-Report
+Name: Yi Li
+Date: 04/16/2017
+
+
+This PA was asked find the largest sub-list from m different array of n element. 
+(1) Building an adjacency matrix by create a n*n matrix for the first array. For the rest of array, use for(i(0->n)) { for(j(0->i))} to change the adjacency. Finally, a n*n adjacency matrix of all sub-array was built.
+	Time complexity O(m*(n^2)). Space complexity O(n^2)
+(2) Using the last array as a check_array. Go through the check_array to ckeck the column of each element(only check the place before the element in the check_array order). If there is no 1 means this element's depth is 1. If there is any 1, compare there depth. The depth of this element should be the max depth found + 1, and link these two element build a linked list. Finally, a n element array with depth was built, and each element will linked to the deepest element that can reach it.
+	Time complexity O(n^2), maximize the efficiency to twice of speed. Space complexity O(n)
+(3) Go though the array built above, find the max depth and return index.
+	Time complexity O(n). Space complexity O(1)
+(4) From the deepest element, reverse the order from deepest to depth 1 to depth 1 to deepest and convert it to an array. Return the array.
+	Time complexity O(n). Space complexity O(n)
+
+
+
+Conclusion: O(m*(n^2)) is required for building an adjacency matrix. Only check the previous elements in the array order to maximize the efficiency from O(n^2) to half of it(twice speed). That's the best I can do with adjacency matrix so far.
