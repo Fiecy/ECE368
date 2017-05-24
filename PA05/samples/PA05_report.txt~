@@ -1,0 +1,13 @@
+PA04-Report
+Name: Yi Li
+Date: 03/28/2017
+
+
+This PA was asked to re-root what was done in PA 03. Initially, I was thinking about to create a new linked list for each re-root. However, that will largely increase the time and space complexity. Then, I figured a new algorithm that is: 1. re-root the current Node(switch Node and root). 2. re-root left subNode. 3. after the left subNode return, re-root current Node back to it was. 4. re-root right subNode. 5. after the right subNode return, re-root current Node back. Calculate and compare area to find the best_width and best_height.
+In this way, no extra Node or linked list was needed. So, space complexity remain the same as PA 03 which is O(n).
+
+This PA was asked to check area (width and height) of each re-root, and there is 2n-3 possible packing solutions in total. Check area is build by a function with O(n) time complexity. So, Re_Rooting function is (2n-3) * n = 2n^2 -3n. It's has an O(n^2) time complexity.
+
+
+
+Conclusion: Re_Rooting is a O(n) space complexity and O(n^2) time complexity function.

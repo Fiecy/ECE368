@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+	int n;
+	int m;
+	int** mat;
+}matrix;
+
+typedef struct _Node{
+  struct _Node* prev;
+  struct _Node* link;
+  int d;
+}TreeNode;
+
+matrix* Load_From_File(char* filename);
+void _print_matrix(matrix* array);
+void _free_matrix(matrix* array);
+void Find_Shortest(matrix* array);
+

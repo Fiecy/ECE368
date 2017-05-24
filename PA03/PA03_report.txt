@@ -1,0 +1,11 @@
+PA03-Report
+Name: Yi Li
+Date: 03/03/2017
+
+This PA has a postorder input. So, my algorithm is establish a stack first. If the input is a leaf node, push(node). If the input is a non-leaf node('V' or 'H'), Node->right = pop(); Node->left = pop(), to build the binary tree. Time complexity: O(n).
+When calculating the area, use a postorder traversal with time complexity O(n) to go through all the node. Algorithm is : go to left most; go to right most; if Node is a non-leaf node [find the leaf node and return to a non-leaf node], calculate the area of this node. Return to it's parent, and use the area of this node to calculate the area of its parent.
+When calculating the position of each leaf node, assume the position of the top node is (0,0). When go to its sub-node, use its (V or H) (L or R) (UP or DOWN) to calculate the position of the sub-node. When reaching the leaf node, assign the position to it's x and y. Compare the label, if the label is larger than the maxlabel, set maxlabel = label, maxx = x, maxy = y. Time complexity is also O(n).
+Print the statement on screen: roomwidth, roomheight, maxwidth, maxheight.
+Use postorder traversal to write the position of each leaf node in the output file. Time complexity is O(n).
+
+Conclusion: All of the steps above has a time complexity is O(n).

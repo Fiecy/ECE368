@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+  
+  struct node{
+	int a;
+	int b;
+  };
+
+  struct test{
+	node* next;
+	node* prev;
+  };
+
+  test* aaa;
+  node* a;
+  node* b;
+
+  
+
+  return 0;
+}

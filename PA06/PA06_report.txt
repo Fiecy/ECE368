@@ -1,0 +1,8 @@
+PA06-Report
+Name: Yi Li
+Date: 04/16/2017
+
+
+This PA was asked find the least turn that is necessary for Jane to cross the river. This program start from the other side of the river, use an improved version of Dijk's algorithm to count the depth of each point.
+Time complexity O(E + VlogV)
+Space complexity O(n*m)

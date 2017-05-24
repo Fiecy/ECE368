@@ -1,0 +1,8 @@
+PA06-Report
+Name: Yi Li
+Date: 04/16/2017
+
+
+This PA was asked find the least turn that is necessary for Jane to cross the river. This program start from the other side of the river and count the depth back. Only check the adjancey point and check the connection of each column after the depth of current column was calculated. All the points those are connected would be updated to the minimum depth. Check the column to the right after the depth of current column was calculated. Update the minimum turns.
+Time complexity O(n*m)
+Space complexity O(n*m)
